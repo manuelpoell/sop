@@ -51,6 +51,7 @@ export class AppComponent implements OnInit, OnDestroy {
       );
       OBR.theme.onChange((theme) => this.themeService.setTheme(theme));
       OBR.action.setHeight(225);
+      OBR.scene.items.onChange(() => this.proximitiesService.updateProximities());
     });
 
     let s = this.proximitiesService.getReferenceTokenStream().subscribe((token) => {
