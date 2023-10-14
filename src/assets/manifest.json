@@ -1,6 +1,6 @@
 {
   "name": "SOP",
-  "description": "Schmandi Observes Proximities tracks distances between tokens.",
+  "description": "Schmandi Observes Proximity tracks distances between tokens.",
   "author": "Schmandi",
   "version": "0.0.1",
   "manifest_version": 1,

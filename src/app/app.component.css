@@ -1,0 +1,40 @@
+.app-container {
+  width: 100%;
+  padding-top: 8px;
+}
+
+.app-placeholder {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-placeholder > span {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 24px;
+  text-align: center;
+}
+
+.reference-name-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  padding: 0 24px;
+}
+
+.reference-name-container > span {
+  font-weight: bold;
+}
+
+.clear-button {
+  font-size: 24px;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.clear-button:hover {
+  cursor: pointer;
+}
