@@ -13,7 +13,7 @@ export class ContextMenuService {
       id: `${ID}/context-menu`,
       icons: [
         {
-          icon: '/assets/add-icon.svg',
+          icon: '/assets/app-icon.svg',
           label: 'SOP - Set as reference point',
           filter: {
             every: [{ key: 'layer', value: 'CHARACTER' }],

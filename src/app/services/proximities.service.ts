@@ -17,7 +17,7 @@ export class ProximitiesService {
     const currentMeasurement = await OBR.scene.grid.getMeasurement();
     const scale = await OBR.scene.grid.getScale();
     await OBR.scene.grid.setMeasurement('EUCLIDEAN');
-    const fogs = await OBR.scene.items.getItems((item) => item.layer === 'FOG');
+    const fogs = await OBR.scene.items.getItems((item) => item.layer === 'FOG' && item.visible);
     for (let token of characters) {
       if (this.invisibleToken(token, fogs)) continue;
       const distance = await OBR.scene.grid.getDistance(this.referenceToken.position, token.position);
